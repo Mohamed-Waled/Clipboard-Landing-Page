@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --button-color1: hsl(171, 66%, 44%);
+    --button-color2: hsl(233, 100%, 69%);
+    --text-color: hsl(210, 10%, 33%);
+    --text-color-alt: hsl(201, 11%, 66%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% -1%;
+}
+
+.headerBox img {
+    margin-top: 2rem;
+}
+
+.headerBox h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 4rem;
+}
+
+.headerBox p {
+    font-size: 20px;
+    color: var(--text-color-alt);
+    width: 65%;
+    margin-top: -1rem;
+}
+
+.buttonGroup button {
+    padding: 18px 40px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 1rem;
+    transition: 0.3s;
+}
+
+.buttonGroup :nth-child(1) {
+    background-color: var(--button-color1);
+}
+
+.buttonGroup :nth-child(2) {
+    background-color: var(--button-color2);
+}
+
+.serviceBox {
+    margin-top: 10rem;
+}
+
+.serviceBox .head {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 2.2rem;
+}
+
+.serviceBox .para {
+    color: var(--text-color-alt);
+    width: 50%;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.innerService img {
+    max-width: 100%;
+    margin-left: -3.2%;
+}
+
+.innerService .text {
+    padding: 20px 0 0 110px;
+}
+
+.innerService .text div {
+    margin-top: 3.5rem;
+}
+
+.innerService .text h3 {
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--text-color);
+}
+
+.innerService .text p {
+    color: var(--text-color-alt);
+    font-size: 16px;
+    width: 58%;
+    line-height: 2;
+}
+
+.serviceBox .para1 {
+    color: var(--text-color-alt);
+    width: 60%;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.serviceBox1 {
+    margin-top: 5rem !important;
+}
+
+.serviceBox .para2 {
+    color: var(--text-color-alt);
+    width: 90%;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+.icons .icon-1,
+.icon-2,
+.icon-3 {
+    width: calc((100% / 3) - 100px);
+    margin-left: 1rem;
+} 
+
+.icons img {
+    margin-bottom: 3rem;
+}
+
+.icons h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.icons p {
+    font-size: 16px;
+    color: var(--text-color-alt);
+    line-height: 2;
+}
+
+.companies {
+    margin-top: 5rem;
+}
+
+.companies :not(:nth-child(1)){
+    max-width: 100%;
+    margin-left: 6rem;
+}
+
+.serviceBox .para3 {
+    color: var(--text-color-alt);
+    width: 55%;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+.footer {
+    margin-top: 10rem;
+    background-color: hsl(220deg 18% 97%);
+    width: 100%;
+    height: 150px;
+    padding: 0 175px;
+}
+
+.footer [alt="logo"] {
+    width: 55px;
+}
+
+.links {
+    width: 75%;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 7rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: var(--text-color-alt);
+}
+
+.SMicons svg {
+    margin-left: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.SMicons svg:hover {
+    filter: invert(70%) sepia(10%) saturate(356%) hue-rotate(158deg) brightness(88%) contrast(93%);
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+footer { 
+    background-color: hsl(220deg 18% 97%);
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: -2rem;
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 426px) {
+    body {
+        background-image: url(../images/bg-header-mobile.png);
+        background-size: 100%;
+    }
+    
+    .headerBox h1 {
+        font-size: 2rem;
+        text-align: center;
+        width: 80%;
+    }
+    
+    .headerBox p {
+        width: 96%;
+        margin-top: 0rem;
+    }
+
+    .buttonGroup {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .buttonGroup button {
+        padding: 18px 80px;
+        margin-bottom: 1rem;
+    }
+    
+    .serviceBox .head {
+        text-align: center;
+    }
+    
+    .serviceBox .para {
+        width: 85%;
+    }
+
+    .innerService {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .innerService img {
+        width: 90%;
+        margin-left: 0;
+    }
+    
+    .innerService .text {
+        padding: 0;
+        text-align: center;
+    } 
+    
+    .innerService .text p {
+        margin: 0 auto;
+        width: 75%;
+    }
+    
+    .serviceBox .para1 {
+        width: 85%;
+    }
+
+    .serviceBox [alt="devices"] {
+        width: 90%;
+    }
+    
+    .icons {
+        flex-direction: column;
+    }
+    
+    .icons .icon-1,
+    .icon-2,
+    .icon-3 {
+        width: 80%;
+        margin-left: 0rem;
+        margin-top: 2rem;
+    } 
+    
+    .companies {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .companies img{
+        max-width: 90%;
+        margin: 2.5rem 0 !important;
+    }
+    
+    .serviceBox .para3 {
+        width: 86%;
+    }
+    
+    .footer {
+        margin-top: 10rem;
+        background-color: hsl(220deg 18% 97%);
+        width: 100%;
+        height: 350px;
+        padding: 3rem 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 0;
+    }
+    
+    .links a {
+        margin-left: 0rem;
+    }
+
+    .raw1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .raw2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .SMicons svg {
+        margin-right: 1.5rem;
+    }
+    
+    footer { 
+        margin-top: -2rem;
+    }
+}
